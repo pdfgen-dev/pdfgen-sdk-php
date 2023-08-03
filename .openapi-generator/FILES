@@ -1,5 +1,4 @@
 .gitignore
-.openapi-generator-ignore
 .php-cs-fixer.dist.php
 .travis.yml
 README.md
@@ -16,9 +15,6 @@ docs/Model/ListTemplatesResponse.md
 docs/Model/TemplateResponse.md
 docs/Model/UpdateTemplateRequest.md
 git_push.sh
-lib/Api/JobsApi.php
-lib/Api/PdfApi.php
-lib/Api/TemplatesApi.php
 lib/ApiException.php
 lib/Configuration.php
 lib/HeaderSelector.php
@@ -32,15 +28,7 @@ lib/Model/ModelInterface.php
 lib/Model/TemplateResponse.php
 lib/Model/UpdateTemplateRequest.php
 lib/ObjectSerializer.php
+lib/pdfgen/JobsApi.php
+lib/pdfgen/PdfApi.php
+lib/pdfgen/TemplatesApi.php
 phpunit.xml.dist
-test/Api/JobsApiTest.php
-test/Api/PdfApiTest.php
-test/Api/TemplatesApiTest.php
-test/Model/CreateTemplateRequestTest.php
-test/Model/ErrorResponseTest.php
-test/Model/GeneratePDFRequestTest.php
-test/Model/JobResponseTest.php
-test/Model/ListJobsResponseTest.php
-test/Model/ListTemplatesResponseTest.php
-test/Model/TemplateResponseTest.php
-test/Model/UpdateTemplateRequestTest.php

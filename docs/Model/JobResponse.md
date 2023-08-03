@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **file_name** | **string** |  | [optional]
 **id** | **string** |  | [optional]
 **status** | **string** |  | [optional]
-**template** | [**\OpenAPI\Client\Model\TemplateResponse**](TemplateResponse.md) |  | [optional]
+**template** | [**\Pdfgen\Model\TemplateResponse**](TemplateResponse.md) |  | [optional]
 **template_id** | **string** |  | [optional]
 **updated_at** | **string** |  | [optional]
 

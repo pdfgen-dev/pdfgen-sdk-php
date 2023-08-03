@@ -1,4 +1,4 @@
-# OpenAPI\Client\JobsApi
+# Pdfgen\JobsApi
 
 All URIs are relative to https://api.pdfgen.dev, except if the operation defines another base path.
 
@@ -26,12 +26,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Pdfgen-Api-Token', 'YOUR_API_KEY');
+$config = Pdfgen\Configuration::getDefaultConfiguration()->setApiKey('X-Pdfgen-Api-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Pdfgen-Api-Token', 'Bearer');
+// $config = Pdfgen\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Pdfgen-Api-Token', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\JobsApi(
+$apiInstance = new Pdfgen\Api\JobsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -73,7 +73,7 @@ try {
 ## `listJobs()`
 
 ```php
-listJobs(): \OpenAPI\Client\Model\ListJobsResponse
+listJobs(): \Pdfgen\Model\ListJobsResponse
 ```
 
 List all Jobs
@@ -88,12 +88,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Pdfgen-Api-Token', 'YOUR_API_KEY');
+$config = Pdfgen\Configuration::getDefaultConfiguration()->setApiKey('X-Pdfgen-Api-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Pdfgen-Api-Token', 'Bearer');
+// $config = Pdfgen\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Pdfgen-Api-Token', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\JobsApi(
+$apiInstance = new Pdfgen\Api\JobsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -114,7 +114,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ListJobsResponse**](../Model/ListJobsResponse.md)
+[**\Pdfgen\Model\ListJobsResponse**](../Model/ListJobsResponse.md)
 
 ### Authorization
 

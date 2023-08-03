@@ -1,4 +1,4 @@
-# OpenAPIClient-php
+# pdfgen
 
 The PDFGen API for HTML to PDF generation.
 
@@ -37,7 +37,7 @@ Download the files and include `autoload.php`:
 
 ```php
 <?php
-require_once('/path/to/OpenAPIClient-php/vendor/autoload.php');
+require_once('/path/to/pdfgen/vendor/autoload.php');
 ```
 
 ## Getting Started
@@ -51,12 +51,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Pdfgen-Api-Token', 'YOUR_API_KEY');
+$config = Pdfgen\Configuration::getDefaultConfiguration()->setApiKey('X-Pdfgen-Api-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Pdfgen-Api-Token', 'Bearer');
+// $config = Pdfgen\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Pdfgen-Api-Token', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\JobsApi(
+$apiInstance = new Pdfgen\Api\JobsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

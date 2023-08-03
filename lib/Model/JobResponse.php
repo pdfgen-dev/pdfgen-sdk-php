@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Pdfgen
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Pdfgen\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Pdfgen\ObjectSerializer;
 
 /**
  * JobResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Pdfgen
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -63,7 +63,7 @@ class JobResponse implements ModelInterface, ArrayAccess, \JsonSerializable
         'file_name' => 'string',
         'id' => 'string',
         'status' => 'string',
-        'template' => '\OpenAPI\Client\Model\TemplateResponse',
+        'template' => '\Pdfgen\Model\TemplateResponse',
         'template_id' => 'string',
         'updated_at' => 'string'
     ];
@@ -477,7 +477,7 @@ class JobResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets template
      *
-     * @return \OpenAPI\Client\Model\TemplateResponse|null
+     * @return \Pdfgen\Model\TemplateResponse|null
      */
     public function getTemplate()
     {
@@ -487,7 +487,7 @@ class JobResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets template
      *
-     * @param \OpenAPI\Client\Model\TemplateResponse|null $template template
+     * @param \Pdfgen\Model\TemplateResponse|null $template template
      *
      * @return self
      */

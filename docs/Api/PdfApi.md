@@ -1,4 +1,4 @@
-# OpenAPI\Client\PdfApi
+# Pdfgen\PdfApi
 
 All URIs are relative to https://api.pdfgen.dev, except if the operation defines another base path.
 
@@ -25,18 +25,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Pdfgen-Api-Token', 'YOUR_API_KEY');
+$config = Pdfgen\Configuration::getDefaultConfiguration()->setApiKey('X-Pdfgen-Api-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Pdfgen-Api-Token', 'Bearer');
+// $config = Pdfgen\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Pdfgen-Api-Token', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\PdfApi(
+$apiInstance = new Pdfgen\Api\PdfApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$req = new \OpenAPI\Client\Model\GeneratePDFRequest(); // \OpenAPI\Client\Model\GeneratePDFRequest | HTML and variables to be converted to PDF
+$req = new \Pdfgen\Model\GeneratePDFRequest(); // \Pdfgen\Model\GeneratePDFRequest | HTML and variables to be converted to PDF
 
 try {
     $result = $apiInstance->generatePdf($req);
@@ -50,7 +50,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **req** | [**\OpenAPI\Client\Model\GeneratePDFRequest**](../Model/GeneratePDFRequest.md)| HTML and variables to be converted to PDF | |
+| **req** | [**\Pdfgen\Model\GeneratePDFRequest**](../Model/GeneratePDFRequest.md)| HTML and variables to be converted to PDF | |
 
 ### Return type
 

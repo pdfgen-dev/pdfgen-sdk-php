@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Pdfgen
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Pdfgen\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Pdfgen\ObjectSerializer;
 
 /**
  * ListTemplatesResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Pdfgen
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class ListTemplatesResponse implements ModelInterface, ArrayAccess, \JsonSeriali
       * @var string[]
       */
     protected static $openAPITypes = [
-        'templates' => '\OpenAPI\Client\Model\TemplateResponse[]'
+        'templates' => '\Pdfgen\Model\TemplateResponse[]'
     ];
 
     /**
@@ -296,7 +296,7 @@ class ListTemplatesResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets templates
      *
-     * @return \OpenAPI\Client\Model\TemplateResponse[]
+     * @return \Pdfgen\Model\TemplateResponse[]
      */
     public function getTemplates()
     {
@@ -306,7 +306,7 @@ class ListTemplatesResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets templates
      *
-     * @param \OpenAPI\Client\Model\TemplateResponse[] $templates templates
+     * @param \Pdfgen\Model\TemplateResponse[] $templates templates
      *
      * @return self
      */

@@ -1,4 +1,4 @@
-# OpenAPI\Client\TemplatesApi
+# Pdfgen\TemplatesApi
 
 All URIs are relative to https://api.pdfgen.dev, except if the operation defines another base path.
 
@@ -16,7 +16,7 @@ All URIs are relative to https://api.pdfgen.dev, except if the operation defines
 ## `createTemplate()`
 
 ```php
-createTemplate($req): \OpenAPI\Client\Model\TemplateResponse
+createTemplate($req): \Pdfgen\Model\TemplateResponse
 ```
 
 Create Template
@@ -31,18 +31,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Pdfgen-Api-Token', 'YOUR_API_KEY');
+$config = Pdfgen\Configuration::getDefaultConfiguration()->setApiKey('X-Pdfgen-Api-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Pdfgen-Api-Token', 'Bearer');
+// $config = Pdfgen\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Pdfgen-Api-Token', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\TemplatesApi(
+$apiInstance = new Pdfgen\Api\TemplatesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$req = new \OpenAPI\Client\Model\CreateTemplateRequest(); // \OpenAPI\Client\Model\CreateTemplateRequest
+$req = new \Pdfgen\Model\CreateTemplateRequest(); // \Pdfgen\Model\CreateTemplateRequest
 
 try {
     $result = $apiInstance->createTemplate($req);
@@ -56,11 +56,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **req** | [**\OpenAPI\Client\Model\CreateTemplateRequest**](../Model/CreateTemplateRequest.md)|  | |
+| **req** | [**\Pdfgen\Model\CreateTemplateRequest**](../Model/CreateTemplateRequest.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\TemplateResponse**](../Model/TemplateResponse.md)
+[**\Pdfgen\Model\TemplateResponse**](../Model/TemplateResponse.md)
 
 ### Authorization
 
@@ -93,12 +93,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Pdfgen-Api-Token', 'YOUR_API_KEY');
+$config = Pdfgen\Configuration::getDefaultConfiguration()->setApiKey('X-Pdfgen-Api-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Pdfgen-Api-Token', 'Bearer');
+// $config = Pdfgen\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Pdfgen-Api-Token', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\TemplatesApi(
+$apiInstance = new Pdfgen\Api\TemplatesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -155,12 +155,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Pdfgen-Api-Token', 'YOUR_API_KEY');
+$config = Pdfgen\Configuration::getDefaultConfiguration()->setApiKey('X-Pdfgen-Api-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Pdfgen-Api-Token', 'Bearer');
+// $config = Pdfgen\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Pdfgen-Api-Token', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\TemplatesApi(
+$apiInstance = new Pdfgen\Api\TemplatesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -204,7 +204,7 @@ try {
 ## `getTemplate()`
 
 ```php
-getTemplate($id): \OpenAPI\Client\Model\TemplateResponse
+getTemplate($id): \Pdfgen\Model\TemplateResponse
 ```
 
 Get Templates
@@ -219,12 +219,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Pdfgen-Api-Token', 'YOUR_API_KEY');
+$config = Pdfgen\Configuration::getDefaultConfiguration()->setApiKey('X-Pdfgen-Api-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Pdfgen-Api-Token', 'Bearer');
+// $config = Pdfgen\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Pdfgen-Api-Token', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\TemplatesApi(
+$apiInstance = new Pdfgen\Api\TemplatesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -248,7 +248,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\TemplateResponse**](../Model/TemplateResponse.md)
+[**\Pdfgen\Model\TemplateResponse**](../Model/TemplateResponse.md)
 
 ### Authorization
 
@@ -266,7 +266,7 @@ try {
 ## `listTemplates()`
 
 ```php
-listTemplates(): \OpenAPI\Client\Model\ListTemplatesResponse
+listTemplates(): \Pdfgen\Model\ListTemplatesResponse
 ```
 
 List all Templates
@@ -281,12 +281,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Pdfgen-Api-Token', 'YOUR_API_KEY');
+$config = Pdfgen\Configuration::getDefaultConfiguration()->setApiKey('X-Pdfgen-Api-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Pdfgen-Api-Token', 'Bearer');
+// $config = Pdfgen\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Pdfgen-Api-Token', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\TemplatesApi(
+$apiInstance = new Pdfgen\Api\TemplatesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -307,7 +307,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ListTemplatesResponse**](../Model/ListTemplatesResponse.md)
+[**\Pdfgen\Model\ListTemplatesResponse**](../Model/ListTemplatesResponse.md)
 
 ### Authorization
 
@@ -340,12 +340,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Pdfgen-Api-Token', 'YOUR_API_KEY');
+$config = Pdfgen\Configuration::getDefaultConfiguration()->setApiKey('X-Pdfgen-Api-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Pdfgen-Api-Token', 'Bearer');
+// $config = Pdfgen\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Pdfgen-Api-Token', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\TemplatesApi(
+$apiInstance = new Pdfgen\Api\TemplatesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -389,7 +389,7 @@ try {
 ## `updateTemplate()`
 
 ```php
-updateTemplate($id, $req): \OpenAPI\Client\Model\TemplateResponse
+updateTemplate($id, $req): \Pdfgen\Model\TemplateResponse
 ```
 
 Update Template
@@ -404,19 +404,19 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Pdfgen-Api-Token', 'YOUR_API_KEY');
+$config = Pdfgen\Configuration::getDefaultConfiguration()->setApiKey('X-Pdfgen-Api-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Pdfgen-Api-Token', 'Bearer');
+// $config = Pdfgen\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Pdfgen-Api-Token', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\TemplatesApi(
+$apiInstance = new Pdfgen\Api\TemplatesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = 'id_example'; // string | Template ID
-$req = new \OpenAPI\Client\Model\UpdateTemplateRequest(); // \OpenAPI\Client\Model\UpdateTemplateRequest
+$req = new \Pdfgen\Model\UpdateTemplateRequest(); // \Pdfgen\Model\UpdateTemplateRequest
 
 try {
     $result = $apiInstance->updateTemplate($id, $req);
@@ -431,11 +431,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **id** | **string**| Template ID | |
-| **req** | [**\OpenAPI\Client\Model\UpdateTemplateRequest**](../Model/UpdateTemplateRequest.md)|  | |
+| **req** | [**\Pdfgen\Model\UpdateTemplateRequest**](../Model/UpdateTemplateRequest.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\TemplateResponse**](../Model/TemplateResponse.md)
+[**\Pdfgen\Model\TemplateResponse**](../Model/TemplateResponse.md)
 
 ### Authorization
 

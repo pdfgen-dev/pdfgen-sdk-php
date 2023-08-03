@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Pdfgen
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Pdfgen\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Pdfgen\ObjectSerializer;
 
 /**
  * ListJobsResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Pdfgen
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class ListJobsResponse implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'jobs' => '\OpenAPI\Client\Model\JobResponse[]'
+        'jobs' => '\Pdfgen\Model\JobResponse[]'
     ];
 
     /**
@@ -296,7 +296,7 @@ class ListJobsResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets jobs
      *
-     * @return \OpenAPI\Client\Model\JobResponse[]
+     * @return \Pdfgen\Model\JobResponse[]
      */
     public function getJobs()
     {
@@ -306,7 +306,7 @@ class ListJobsResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets jobs
      *
-     * @param \OpenAPI\Client\Model\JobResponse[] $jobs jobs
+     * @param \Pdfgen\Model\JobResponse[] $jobs jobs
      *
      * @return self
      */
