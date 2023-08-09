@@ -10,7 +10,7 @@ All URIs are relative to https://api.pdfgen.dev, except if the operation defines
 ## `generatePdf()`
 
 ```php
-generatePdf($req): object
+generatePdf($req): \SplFileObject
 ```
 
 Generate PDF
@@ -54,7 +54,7 @@ try {
 
 ### Return type
 
-**object**
+**\SplFileObject**
 
 ### Authorization
 
@@ -62,8 +62,8 @@ try {
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: `application/json`
+- **Content-Type**: `application/json`
+- **Accept**: `application/pdf`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)

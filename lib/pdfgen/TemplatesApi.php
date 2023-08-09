@@ -865,7 +865,7 @@ class TemplatesApi
      *
      * @throws \Pdfgen\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return object|\Pdfgen\Model\ErrorResponse|\Pdfgen\Model\ErrorResponse|\Pdfgen\Model\ErrorResponse
+     * @return \SplFileObject|\Pdfgen\Model\ErrorResponse|\Pdfgen\Model\ErrorResponse|\Pdfgen\Model\ErrorResponse
      */
     public function generatePdfFromTemplate($id, $variables, string $contentType = self::contentTypes['generatePdfFromTemplate'][0])
     {
@@ -884,7 +884,7 @@ class TemplatesApi
      *
      * @throws \Pdfgen\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of object|\Pdfgen\Model\ErrorResponse|\Pdfgen\Model\ErrorResponse|\Pdfgen\Model\ErrorResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SplFileObject|\Pdfgen\Model\ErrorResponse|\Pdfgen\Model\ErrorResponse|\Pdfgen\Model\ErrorResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function generatePdfFromTemplateWithHttpInfo($id, $variables, string $contentType = self::contentTypes['generatePdfFromTemplate'][0])
     {
@@ -927,17 +927,17 @@ class TemplatesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('object' === '\SplFileObject') {
+                    if ('\SplFileObject' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('object' !== 'string') {
+                        if ('\SplFileObject' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, 'object', []),
+                        ObjectSerializer::deserialize($content, '\SplFileObject', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -988,7 +988,7 @@ class TemplatesApi
                     ];
             }
 
-            $returnType = 'object';
+            $returnType = '\SplFileObject';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1009,7 +1009,7 @@ class TemplatesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        'object',
+                        '\SplFileObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1079,7 +1079,7 @@ class TemplatesApi
      */
     public function generatePdfFromTemplateAsyncWithHttpInfo($id, $variables, string $contentType = self::contentTypes['generatePdfFromTemplate'][0])
     {
-        $returnType = 'object';
+        $returnType = '\SplFileObject';
         $request = $this->generatePdfFromTemplateRequest($id, $variables, $contentType);
 
         return $this->client
@@ -1166,7 +1166,7 @@ class TemplatesApi
 
 
         $headers = $this->headerSelector->selectHeaders(
-            ['application/json', ],
+            ['application/pdf', ],
             $contentType,
             $multipart
         );
